@@ -15,11 +15,17 @@ FWI is a highly nonlinear and ill-posed inverse problem. While Newton-type metho
 This work introduces a deep learning framework that learns an approximate inverse Hessian operator directly from multiscale FWI updates. The learned operator acts as a preconditioner that transforms raw gradients into more physically meaningful and better-scaled model updates, effectively mimicking the behavior of second-order optimization while maintaining computational feasibility.
 
 ### Methods
-Forward Modelling with absorbing boundary:  
-$\frac{1}{v^2}\frac{\partial^2 u(x,t)}{\partial t^2}
+
+#### Forward Modeling with Absorbing Boundary
+
+The forward wave propagation is governed by the damped acoustic wave equation:
+
+$$
+\frac{1}{v^2}\frac{\partial^2 u(x,t)}{\partial t^2}
 - \nabla^2 u(x,t)
 + \eta \frac{\partial u(x,t)}{\partial t}
-= f_s(x,t)$
+= f_s(x,t)
+$$
 
 
 ## 🌟 Highlights
