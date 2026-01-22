@@ -1,9 +1,18 @@
-# 📦 My Package
+# 📦 Deep Learning-based inverse Hessian Estimation in Multi-scale Full Waveform Inversion
 
-(add your badges here)
+<img width="2944" height="1404" alt="image" src="https://github.com/user-attachments/assets/f2e7b1e7-5251-46f7-9776-8607a4f324f0" />
 
 > *Your documentation is a direct reflection of your software, so hold it to the same standards.*
 
+
+## ℹ️ Overview
+
+This repository presents a research study on deep learning–based inverse Hessian estimation for multiscale Full Waveform Inversion (FWI).
+The goal of this work is to improve model update quality, convergence stability, and computational efficiency in FWI by replacing expensive or impractical second-order calculations with a data-driven approximation of the inverse Hessian.
+
+FWI is a highly nonlinear and ill-posed inverse problem. While Newton-type methods offer fast convergence by leveraging second-order information, explicit Hessian construction and inversion are computationally prohibitive for large-scale seismic problems. As a result, most practical workflows rely on gradient-based or Gauss–Newton approximations, which often suffer from slow convergence, amplitude imbalance, and sensitivity to cycle skipping—especially at higher frequencies.
+
+This work introduces a deep learning framework that learns an approximate inverse Hessian operator directly from multiscale FWI updates. The learned operator acts as a preconditioner that transforms raw gradients into more physically meaningful and better-scaled model updates, effectively mimicking the behavior of second-order optimization while maintaining computational feasibility.
 
 ## 🌟 Highlights
 
@@ -11,15 +20,12 @@
 - This problem handled
 - etc.
 
-
-## ℹ️ Overview
-
-A paragraph explaining your work, who you are, and why you made it.
-
-
+  
 ### ✍️ Authors
 
-Mention who you are and link to your GitHub or organization's website.
+Dziand Dafi Ginandjar - Institut Teknologi Bandung
+Andri Hendriyana - Institut Teknologi Bandung
+Infall Syafalni - Institut Teknologi Bandung
 
 
 ## 🚀 Usage
